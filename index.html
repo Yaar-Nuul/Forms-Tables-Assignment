@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    
+</head>
+<style>#form{border: solid 1px;
+    margin:0 auto;
+    width: 50%;
+    padding: 24px;
+
+}
+.input{
+padding: 14px 12px;
+border: radius 50%;
+border: solid 1px;
+width: 80%;
+
+}
+button{
+padding: 12px 200px;
+border: none 1px;
+background-color: black;
+color: white;
+}
+</style>
+<Body id="form">
+    <form>
+<h4>Don't have an account? <a href="forms.html">Sign Up</a><b>Sign up</b></h4>
+<br/>
+<h1>Sign In</h1>
+<br/>
+<label for="email">Email</label>
+<br/>
+<input style="email" type="email" placeholder="Sadegsaadi2@Gmail.Com" required/>
+<br/>
+<br/>
+<label for="Password">Password</label>
+<br/>
+<input style="password" type="password" placeholder="kmkji4566" required/>
+<br/>
+<br/>
+<input 
+style="checkbox"/> I've Read And Agree With The Terms Of Service And Our Privacy
+<label for="html"></label>
+<br/>
+<br/>
+<button type="signin"><a href="table.html">Sign In</a></button>
+<br/>
+<br/>
+<hr style=" color:black;
+width:50% ; margin-left: 0; border: solid 1px"/> Or Sign Up With<hr style="color: black; width: 50%; margin-right: 0;border: solid 1px;">
+<br/>
+<br/>
+<img
+src="https://static-00.iconduck.com/assets.00/google-logo-icon-503x512-d3y72ufg.png"
+height="30"; width="50" margin="50%"/>
+<img
+src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8AAAC9vb1SUlKlpaXBwcHLy8v19fUfHx/ExMT8/Pzb29v6+vqWlpazs7OhoaFkZGTX19c3NzctLS1GRkZvb29hYWF1dXWqqqpBQUHm5uaDg4NoaGiYmJjKysp6enomJiZYWFgQEBDt7e0aGhozMzOBgYGMjIzkF8bvAAAE3klEQVR4nO2ca3faOhBFMZA4mHd4xoGEJr3l///DewlJQ2tJo2MJjbjr7K8tWtqxLc2Mxu50CCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCiAZVPZiMn1ez9Xq22xz3k5d6pD2liMz7r49Fk8VqO9SeWgTeJ2uD3DezSak9xRDKSc+pd6Y3qbQn2pL5ykPvzOYWb9fBk7ffieWL9oRBBgfI78RioD1pgDl2/b54upV7deT//P3N5iY2yUlrvxNd7emLVLMgwaLYZb513Af6nZhrS7iYRhAsiq22hp1NFMGieNUWseETovnxQ1vFSLmIJlgUjxluG+VDRMGiOGSnOMLDNDeLzHaNKuYteuZR2+lPltEFM1tu2keiLjLaNOJs9E2y2fpbhGq76Uv9XlZVWQ9fJuONLdvKJIArUb1Xw8TrwZvhf77lsaD+wPzGlp3OuJ+u0qqYwfLBtbV4aI4YMsgXsXt0ah/IEhPpxzZQxuu6IhbDTTITC9A6OnGNZItrtctTSLT2yzmSzXCZyMRCFxB8cA9lzU10a8U/AcN791BWQ9UQHLmEUiBtzy+FP81VQZ5CaZ52Q8UnEVlID9JgjhqB3nLqPvz8k7E0mMNQbU+EwhkxTXDVebQCGygiNU+ymne3/TOm3OILZ6hwRZD6qHHJr31rA73UamfeAUHjo7T1//l7crsT0E26D/u9zm0KZRXNkgu0Tu0U/DodZIaGi7CHfq/g1xlCM2xmhthZv8amD6wTRkPo5yqFReywsGEIVug0qsPYSUWo4T/pBUfYDEMNi/SVU2yhCTeskxsOEhumr2VgS2m4YfqoZpzY0BD2XZnnxIbH5IbgoWiwYfo8H+xfCzZMH3sjNZoYhrP8DJ+/yhMnpo3IeTTtX7KVCgbr/AzBOm5+huJzCBpKw6V/DsW1FDMUiz7pz7t/xTUUy+fPV/KwI8Y0mGFfGk6smUdHjEsxQzGfTp/k38U1FKs26d83EfNDyLCSRlMoRYkxCWRYi4YKhzNSyyxkKObTi2tpONjFNBTLwxrtX1LLJWQo/bmK/rU0HMxjGopd4hp9mNLyhxjKpcmrabgQsgHEUNx6dI5IhUBrP7j7pts44ry/+NfBUTLUeAx99rALGjk+1t2fvh78AXJy0TCEXpJSOLX4AGnRDzN0NN5eFaRVIcxQp1EBm2WQoVKzSQc6nQkyVHxT37+9NMTwp4baJ/4HUCGGOpvhJ0kMNcR+IxaQIhhqbRWfuDoKIxlqaF0gFqSCDbU6L3/jGV+2NtR/WdYz/m5tqP3KTMf3QL+tYfpivgHTl8piGWpu9t943actDTO4R0/4RDbtDNO3mFjwaFNsZZj+3NeK/Ci2MXzI4z3nD0oxtGljqFScMSOuNi0MM3kZ/wup4okbZvcRPkERNrzTkHDjVkQNMxT871l0LTegoeZrow5Kx6aBGWYSyhiwtxEhho85f5bWGsABhll87cNObTnM8DdUz+lFzCdlvoZLtQI+wNDU/eNpmM13kwQM7056Ga5yXmL+onHw5mHYy3ePMFFN3zDDXmaBtg/dpb/h7gb9TtTjg4/hYX8LC6iN4fTJbfhwvNHLd0F5v5+ZDd9226zy+CAaJZfjuPv/sSOEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCLkl/gUBXju9y5fqTgAAAABJRU5ErkJggg=="
+height="30"; width="50" margin="50%"/>
+
+</form>
+    
+</body>
+</html>
