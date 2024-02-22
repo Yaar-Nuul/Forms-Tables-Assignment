@@ -1,0 +1,36 @@
+#container{border: solid 1px;
+    margin: auto;
+    padding: 14px 12px;
+    width: 50%;
+}
+button {color:aliceblue;
+    background: black;
+    display: inline-block;
+    padding: 12px;
+    width: 60%;
+    height: 3px;
+    text-align: center;
+    border:solid1px;
+    border-radius:5px; 
+    font-size:11px; 
+  }
+  .input{
+border: solid1px;
+width: 50%
+  }
+  table th, td {
+    width: 50%;
+    height: 4px;
+    border: 1px solid;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+
+    }
+    image{
+        display: flex;
+        gap: 25px;
+        width: 22%;
+    }
+
+  
